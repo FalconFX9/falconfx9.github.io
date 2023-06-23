@@ -11,18 +11,18 @@
           <li class="p-name">
             {%- if site.author -%}
               {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
             {%- endif -%}
             </li>
+            <p style="color:black;"><b>Contact:</b><br>
             {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
             {%- endif -%}
+            </p>
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+        {%- include social.html -%}</p>
       </div>
 
       <div class="footer-col footer-col-3">
